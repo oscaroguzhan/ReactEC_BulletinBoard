@@ -16,6 +16,8 @@
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
+  --margin: 3px 0;
+  --padding: 5px;
 }
 h1,
 h2,
@@ -47,7 +49,9 @@ body {
 }
 li {
   list-style: none;
+  margin: 3px 0;
 }
+
 
 .container header {
   display: flex;
@@ -74,20 +78,23 @@ main {
   height: 100vh;
   
   border: 2px solid black;
-  margin: 0 1.2rem;
+  margin: 0 0.2rem;
   border-radius: 6px;
   padding: 5px;
   background-color: var(--clr-grey-special);
+
 }
 article {
-  margin: 1rem 0;
-  height: 250px;
+  margin: 0.3rem 0;
+  height: fit-content;
+  
 }
 article .question {
   display: flex;
   flex-direction: column;
   background-color: var(--clr-red-special);
-
+  align-items: center;
+  height: fit-content;
   
 }
 
@@ -109,15 +116,40 @@ article .question {
 }
 .info {
   display: flex;
-  
-  margin: 5px 0;
-  padding: 5px;
+  box-sizing: border-box;
+  margin: 2px 0;
+  padding: 2px;
   
   min-width: fit-content;
   flex-direction: column;
-  width: 70vw;
+  min-height: fit-content;
+}
+.info ul {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  padding: 5px;
+  justify-content: space-around;
+
+  
+  
+}
+.info ul li {
+  margin: var(--margin);
+  padding: var(--padding);
 }
 .buttons {
   display: flex;
   margin: 5px 0;
+}
+.btn_like {
+  cursor:pointer;
+}
+.btn_like:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transition: 0.7s;
+}
+.btn_hide {
+  display: none;
 }
