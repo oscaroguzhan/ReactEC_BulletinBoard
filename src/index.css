@@ -25,14 +25,15 @@ h3,
 h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
-  line-height: 1.25;
+  line-height: 1.05;
   margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
 }
 h1 {
   font-size: 2.5rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 h3 {
   font-size: 1.25rem;
@@ -58,7 +59,7 @@ li {
   align-items: center;
   background-color: var(--black);
   color:var(--white);
-  margin: 0 1.2rem;
+  margin: 0 0.2rem;
   border-radius: 5px;
 }
 img {
@@ -70,13 +71,12 @@ img {
   border: 2px solid var(--black);
 }
 .title {
-  margin-left: 3rem;
+  margin-left: 5rem;
   padding: 5px;
-  font-size: 1.2rem;
+  
+  
 }
 main {
-  height: 100vh;
-  
   border: 2px solid black;
   margin: 0 0.2rem;
   border-radius: 6px;
@@ -153,3 +153,10 @@ article .question {
 .btn_hide {
   display: none;
 }
+.post p{
+  margin: 5px 0 5px 10px;
+  color:black;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
